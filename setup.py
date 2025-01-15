@@ -5,10 +5,6 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 here = Path(__file__).resolve().parent
-README = (here / "README.rst").read_text(encoding="utf-8")
-VERSION = (here / "VERSION").read_text(encoding="utf-8").strip()
-
-excluded_packages = ["docs", "tests", "tests.*"]
 
 
 # this module can be zip-safe if the zipimporter implements iter_modules or if
