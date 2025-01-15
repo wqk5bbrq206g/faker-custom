@@ -22,13 +22,7 @@ except AttributeError:
 
 setup(
     name="Faker",
-    version=VERSION,
     description="Faker is a Python package that generates fake data for you.",
-    long_description=README,
-    entry_points={
-        "console_scripts": ["faker=faker.cli:execute_from_command_line"],
-        "pytest11": ["faker = faker.contrib.pytest.plugin"],
-    },
     classifiers=[
         # See https://pypi.org/pypi?%3Aaction=list_classifiers
         "Development Status :: 5 - Production/Stable",
@@ -59,9 +53,6 @@ setup(
     },
     license="MIT License",
     packages=find_packages(exclude=excluded_packages),
-    package_data={
-        "faker": ["py.typed", "proxy.pyi"],
-    },
     platforms=["any"],
     zip_safe=zip_safe,
     python_requires=">=3.8",
